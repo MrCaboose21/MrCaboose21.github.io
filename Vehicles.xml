@@ -6,7 +6,7 @@
 		<Make>Honda</Make>
 		<Model>Civic</Model>
 		<Year>2020</Year>
-		<VIN>1234XYZ</VIN>
+		<Plate>1234XYZ</Plate>
 		<ProvinceID>1</ProvinceID>
 		<OwnerID>1</OwnerID>
 	</Vehicle>
@@ -15,7 +15,7 @@
 		<Make>Toyota</Make>
 		<Model>Corolla</Model>
 		<Year>2021</Year>
-		<VIN>7890ABC</VIN>
+		<Plate>7890ABC</Plate>
 		<ProvinceID>2</ProvinceID>
 		<OwnerID>2</OwnerID>
 	</Vehicle>
@@ -24,7 +24,7 @@
 		<Make>Ford</Make>
 		<Model>F-150</Model>
 		<Year>2019</Year>
-		<VIN>11111DEF</VIN>
+		<Plate>11111DEF</Plate>
 		<ProvinceID>3</ProvinceID>
 		<OwnerID>3</OwnerID>
 	</Vehicle>
@@ -33,7 +33,7 @@
 		<Make>Honda</Make>
 		<Model>Accord</Model>
 		<Year>2018</Year>
-		<VIN>55555ABC</VIN>
+		<Plate>55555ABC</Plate>
 		<ProvinceID>1</ProvinceID>
 		<OwnerID>1</OwnerID>
 	</Vehicle>
@@ -42,7 +42,7 @@
 		<Make>Toyota</Make>
 		<Model>Camry</Model>
 		<Year>2020</Year>
-		<VIN>66666DEF</VIN>
+		<Plate>66666DEF</Plate>
 		<ProvinceID>2</ProvinceID>
 		<OwnerID>2</OwnerID>
 	</Vehicle>
@@ -51,7 +51,7 @@
 		<Make>Ford</Make>
 		<Model>Explorer</Model>
 		<Year>2021</Year>
-		<VIN>77777GHI</VIN>
+		<Plate>77777GHI</Plate>
 		<ProvinceID>3</ProvinceID>
 		<OwnerID>3</OwnerID>
 	</Vehicle>
