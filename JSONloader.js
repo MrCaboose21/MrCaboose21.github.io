@@ -3,18 +3,18 @@ fetch("Vehicles.json")
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
-    return response.json(); // Parse the JSON
+    return response.json(); 
   })
   .then(data => {
     console.log("Fetched data:", data);
 
-    // Access the Vehicles array
+    
     const vehiclesArray = data.Vehicles;
     if (!Array.isArray(vehiclesArray)) {
       throw new Error("Data is not an array");
     }
 
-    // Process and display the data
+    
     const tableBody = document.getElementById("data-table");
     vehiclesArray.forEach(vehicle => {
       const row = document.createElement("tr");
