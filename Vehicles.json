@@ -1,0 +1,58 @@
+{
+	"Vehicles": [
+		{
+			"VehicleID": 1,
+			"Make": "Honda",
+			"Model": "Civic",
+			"Year": 2020,
+			"VIN": "1234XYZ",
+			"ProvinceID": 1,
+			"OwnerID": 1
+		},
+		{
+			"VehicleID": 2,
+			"Make": "Toyota",
+			"Model": "Corolla",
+			"Year": 2021,
+			"VIN": "67890ABC",
+			"ProvinceID": 2,
+			"OwnerID": 2
+		},
+		{
+			"VehicleID": 3,
+			"Make": "Ford",
+			"Model": "F-150",
+			"Year": 2019,
+			"VIN": "11111DEF",
+			"ProvinceID": 3,
+			"OwnerID": 3
+		},
+		{
+			"VehicleID": 4,
+			"Make": "Honda",
+			"Model": "Accord",
+			"Year": 2018,
+			"VIN": "55555ABC",
+			"ProvinceID": 1,
+			"OwnerID": 1
+		},
+		{
+			"VehicleID": 5,
+			"Make": "Toyota",
+			"Model": "Camry",
+			"Year": 2020,
+			"VIN": "67890ABC",
+			"ProvinceID": 2,
+			"OwnerID": 2
+		},
+		{
+			"VehicleID": 6,
+			"Make": "Ford",
+			"Model": "Explorer",
+			"Year": 2021,
+			"VIN": "77777GHI",
+			"ProvinceID": 3,
+			"OwnerID": 3
+		}
+	]
+}
