@@ -1,13 +1,13 @@
-// Fetch data from the XML file
 fetch("Vehicles.xml")
   .then(response => {
+    // Check if the response is OK (status code 200)
     if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
+      throw new Error("Failed to fetch XML: " + response.statusText);
     }
-    return response.text(); // Get the raw XML text
+    return response.text();
   })
   .then(xmlString => {
-    console.log("Fetched XML:", xmlString); // Debugging log
+    console.log("Fetched XML:", xmlString);  // Log the raw XML content
 
     // Parse the XML string into an XML Document
     const parser = new DOMParser();
@@ -16,11 +16,17 @@ fetch("Vehicles.xml")
     // Check for parsing errors
     const parserError = xmlDoc.querySelector("parsererror");
     if (parserError) {
-      throw new Error("Error parsing XML");
+      throw new Error("Error parsing XML: " + parserError.textContent);
     }
 
     // Get the list of <Vehicle> elements
     const vehicles = xmlDoc.querySelectorAll("Vehicle");
+
+    // Check if vehicles data is available
+    if (!vehicles || vehicles.length === 0) {
+      console.error("No vehicles found in XML.");
+      return;
+    }
 
     // Reference to the table body
     const tableBody = document.getElementById("data-table");
@@ -32,7 +38,7 @@ fetch("Vehicles.xml")
       const year = vehicle.querySelector("Year").textContent;
       const vin = vehicle.querySelector("VIN").textContent;
 
-      // Create a new table row
+      // Add a new row to the table
       const row = document.createElement("tr");
       row.innerHTML = `
         <td>${make}</td>
@@ -40,8 +46,6 @@ fetch("Vehicles.xml")
         <td>${year}</td>
         <td>${vin}</td>
       `;
-
-      // Append the row to the table body
       tableBody.appendChild(row);
     });
   })
