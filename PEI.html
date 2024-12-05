@@ -3,6 +3,7 @@
 <head>
 	<title>3C2T - Prince Edward Island Database</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="JSONloader.js"></script>
 </head>
 <body>
 
@@ -19,5 +20,18 @@
 		</li>
 	  </ul>
       <h1>Prince Edward Island</h1>
+	  <table>
+		<thead>
+		  <tr>
+			<th>Make</th>
+			<th>Model</th>
+			<th>Year</th>
+			<th>VIN</th>
+		  </tr>
+		</thead>
+		<tbody id="data-table">
+		  <!-- Rows will be appended here -->
+		</tbody>
+	  </table>
 </body>
 </html>
