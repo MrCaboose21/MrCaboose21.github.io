@@ -25,6 +25,8 @@
   h1 {text-align: center;
      
     }
+tr:hover {
+  background-color: #c8d6e5;
 
   ul {
     list-style-type: none;
