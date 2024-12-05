@@ -32,14 +32,14 @@ fetch("Vehicles.xml")
       const make = vehicle.querySelector("Make").textContent;
       const model = vehicle.querySelector("Model").textContent;
       const year = vehicle.querySelector("Year").textContent;
-      const vin = vehicle.querySelector("VIN").textContent;
+      const Plate = vehicle.querySelector("Plate").textContent;
 
       const row = document.createElement("tr");
       row.innerHTML = `
         <td>${make}</td>
         <td>${model}</td>
         <td>${year}</td>
-        <td>${vin}</td>
+        <td>${Plate}</td>
       `;
       tableBody.appendChild(row);
     });
