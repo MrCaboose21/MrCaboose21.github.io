@@ -1,8 +1,26 @@
-body{
+  body{
     font-family:Tahoma, sans-serif;
     background-color: color(lightgrey);
     
   }
+  
+  table{
+    width: 100%;
+    border-collapse:collapse;
+    font-size: large;
+    text-align: left;
+  }
+
+  th{
+    background-color: #c8d6e5;
+    border: solid #576574;
+    
+  }
+  
+  tr, td{
+    border: 5px solid #576574;
+  }
+
   h1 {text-align: center;
      
     }
@@ -12,7 +30,7 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #222f3e;
   }
   
   li {
@@ -28,7 +46,7 @@ body{
   }
   
   li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: #ee5253;
   }
   li.dropdown {
     display: inline-block;

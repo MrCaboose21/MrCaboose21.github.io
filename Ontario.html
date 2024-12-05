@@ -19,18 +19,5 @@
 		</li>
 	</ul>
       <h1>Ontario</h1>
-      <button type="button" onclick="loadXMLDoc()">Get my CD collection</button>
-      <br><br>
-      <table id = "Vehicles"></table>
-        <script>
-            fetch('path/to/your/data.xml') 
-              .then(response => response.text()) 
-              .then(str => { 
-                const parser = new DOMParser(); 
-                const xmlDoc = parser.parseFromString(str, "application/xml"); 
-        // Continue with the same logic to extract and display data 
-        }) 
-    .catch(error => console.error('Error loading XML:', error)); 
-        </script>
 </body>
 </html>
