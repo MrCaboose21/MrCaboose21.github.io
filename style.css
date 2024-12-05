@@ -1,7 +1,8 @@
   body{
     font-family:Tahoma, sans-serif;
     background-color: color(lightgrey);
-    
+    margin: 0px;
+    padding: 0px;
   }
   
   table{
